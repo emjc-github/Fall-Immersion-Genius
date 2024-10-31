@@ -1,15 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
-const form = document.getElemntById("userInfo")
+    const form = document.getElemntById("userInfo")
 
     form.addEventListener('submit', function(event)){
-    event.preventDefault()
+        event.preventDefault()
 
-    form = document.getElementById("name")
-    form = document.getElementById("email")
-    form = document.getElemnetById("message")
+    name = document.getElementById("name")
+    email = document.getElementById("email")
+    message = document.getElemnetById("message")
 
     if(document.getElementById("name") && document.getElementById("email") && document.getElemnetById("message"))
         alert('Form submitted successfully!\nName: ${username}\nEmail...');
     }
-    else('Fill all the feilds\nName: ${username}\nEmail...');
+    else(document.getElementById("name") && document.getElementById("email") && document.getElemnetById("message"))
+        alert('Fill all the feilds\nName: ${username}\nEmail...');
 }
