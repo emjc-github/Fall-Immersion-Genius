@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
             alert('Form submitted successfully!\nName: ${username.value}\nEmail: ${email.value}\nMessage: ${message.value}');
         }
         else(("name") && ("email") && ("message"))
-            alert('Fill all the feilds in\nName: ${username.value}\nEmail: ${email.value}\nMessage: ${message.value}');});
+            alert('Fill all the feilds in\nName: ${username.value}\nEmail: ${email.value}\nMessage: ${message.value}');
+        }
     });
 });
